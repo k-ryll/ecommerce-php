@@ -1,0 +1,41 @@
+.success-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  width: 100%;
+}
+
+.success-text {
+  font-size: 3em;
+  color: #333;
+}
+
+.cart-item{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.cart-item h3{
+  font-size: 1.3rem;
+  color: rgb(255, 0, 0);
+}
+.cart-container >p{
+  margin-top: 3rem;
+  font-weight: bold;
+}
+
+img{
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  opacity: .8;
+  cursor: pointer;
+  width: calc(100% - 30px);
+}
+
+img:hover{
+  opacity: 1;
+}
+

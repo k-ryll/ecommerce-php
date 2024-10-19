@@ -1,0 +1,151 @@
+:root{
+    --clr-bg: #FFE1FF;
+    --clr-accent: #E4B1F0;
+    --clr-accent-100: #7E60BF;
+    --clr-primary:#433878;
+    --clr-primary-100:#2f2856;
+
+    --font-scale-large: 2rem;
+    --font-scale-medium: 1.3rem;
+    --font-scale-small: 1rem;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+  /*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+  /* /css/styles.css */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header {
+    background-color: var(--clr-bg);
+    padding: 10px 0;
+    color: var(--clr-primary-100);
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+}
+
+
+nav a {
+    color: var(--clr-primary);
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 2rem;
+    
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--clr-bg);
+    color: var(--clr-primary-100);
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+button{
+    background-color: var(--clr-accent-100);
+    color: var(--clr-bg);
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+}
+
+button:hover{
+    background-color: var(--clr-accent);
+    color: var(--clr-primary-100);
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        font-size: var(--font-scale-small);
+    }
+
+    nav a {
+        font-size: var(--font-scale-medium);
+        margin: 0 10px;
+    }
+
+    button {
+        font-size: var(--font-scale-small);
+        padding: 6px 12px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: var(--font-scale-small);
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    nav a {
+        margin: 10px 0;
+        font-size: var(--font-scale-small);
+    }
+
+    button {
+        padding: 5px 10px;
+    }}
